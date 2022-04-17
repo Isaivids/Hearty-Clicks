@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Sun Photography",
+        "img": "1.jpg",
+        "moto": "10+ orders this month" ,
+        "type": "Photo + Video", 
+        "amount":"47000",
+        "contact": "1234567890"
+    },
+    {
+        "name": "Adithya Photography",
+        "img": "2.jpg",
+        "moto": "14+ orders this month" ,
+        "type": "Photo", 
+        "amount":"53000",
+        "contact": "1234567890"
+    },
+    {
+        "name": "Music Photography",
+        "img": "3.jpg",
+        "moto": "10+ orders this month" ,
+        "type": "Photo + Video", 
+        "amount":"25000",
+        "contact": "1234567890"
+    },
+    {
+        "name": "Gemini Photography",
+        "img": "4.jpg",
+        "moto": "8+ orders this month" ,
+        "type": "Photo + Video", 
+        "amount":"45000",
+        "contact": "1234567890"
+    },
+    {
+        "name": "Chutti Photography",
+        "img": "5.jpg",
+        "moto": "6+ orders this month" ,
+        "type": "Photo", 
+        "amount":"55000",
+        "contact": "1234567890"
+    },
+    {
+        "name": "SN Photography",
+        "img": "6.jpg",
+        "moto": "9+ orders this month" ,
+        "type": "Photo", 
+        "amount":"35000",
+        "contact": "1234567890"
+    }
+]

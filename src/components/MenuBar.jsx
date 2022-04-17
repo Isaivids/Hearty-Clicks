@@ -8,14 +8,14 @@ import './MenuBar.scss';
 
 const MenuBar = () => {
 
-  const [toggle, setToggle] = useState(false);
+  const [toggle, setToggle] = useState(true);
 
   return (
 
     <div className='menu-bar'>
         <div>
-            <h3><span><MdCamera/></span>Candid Clicks</h3>
-            <h3 onClick={()=>setToggle(!toggle)}>{toggle ? <CgMenuGridR/> : <RiCloseFill/>}</h3>
+            <span><span><MdCamera/></span>MOMENTS</span>
+            <h1 onClick={()=>setToggle(!toggle)}>{toggle ? <CgMenuGridR/> : <RiCloseFill/>}</h1>
         </div>
         <nav className={toggle ? 'nav-links': 'nav-links show'}>
             <NavLink to="/" className="link" onClick={()=>setToggle(!toggle)}>Home</NavLink>

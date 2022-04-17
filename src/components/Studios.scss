@@ -1,0 +1,91 @@
+@import '../Styles.scss';
+.studios{
+    background-color: $white-bg;
+    padding: 20px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .studios-list{
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(auto-fit, minmax(18%, 200px));
+        justify-content: center;
+        gap: 40px;
+    }
+    .studios-header{
+       p{
+        text-align: center;
+       }
+    }
+    .studio{
+        overflow: hidden;
+        width: 100%;
+        height: 370px;
+        display: grid;
+        grid-template-rows: 150px 170px 50px;
+        border-radius: 10px;
+        .studio-img{
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .studio-content{
+            padding: 5px 10px;
+            background-color: $card2;
+            display: grid;
+            grid: auto;
+            align-items: center;
+            text-align: center;
+            span:nth-child(1){
+                font-weight: bold;
+                color: $primary;
+            }
+            span:nth-child(4){
+                font-weight: bold;
+            }
+        }
+        .studio-footer{
+            background-color: $card;
+            font-weight: 600;
+            font-size: 25px;
+            color: $text-primary;
+            display: flex;
+            justify-content: center;
+            span:nth-child(1){
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 100%;
+                background-color: $whatsapp;
+                cursor: pointer;
+            }
+            span:nth-child(2){
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 100%;
+                background-color: $instagram;
+                cursor: pointer;
+            }
+        }
+    }
+}
+@media screen and (max-width:800px) {
+    .studios{
+        .studios-header{
+            h1{
+                font-size: 15px;
+                text-align: center;
+            }
+            p{
+                font-size: 8px;
+            }
+        }
+    }
+}

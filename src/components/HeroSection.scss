@@ -1,0 +1,60 @@
+@import '../Styles.scss';
+
+.slides{
+    display: flex;
+    overflow: hidden;
+    margin: 0;
+}
+.slide{
+    display: flex;
+    min-width: 100%;
+    transition: all 1s ease-in-out;
+    position: relative;
+    img{
+        width: 100%;
+        height: auto;
+    }
+    p{
+        position: absolute;
+        bottom: 20%;
+        width: 100%;
+        font-size: 34px;
+        font-weight: bold;
+        color: $text-primary;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        text-shadow: 2px 2px 5px #000;
+    }
+}
+#goLeft{
+    position: absolute;
+    margin: 20% 2%;
+    color: $text-primary;
+    font-size: 30px;
+    left: 0;
+    cursor: pointer;
+}
+#goRight{
+    position: absolute;
+    font-size: 30px;
+    margin: 20% 2%;
+    color: $text-primary;
+    right: 0;
+    cursor: pointer;
+}
+
+@media screen and (max-width:800px) {
+    #goLeft{
+        font-size: 15px;
+    }
+    #goRight{
+        font-size: 15px;
+    }
+    .slide{
+        p{
+            bottom: 6%;
+            font-size:13px;
+        }
+    }
+}

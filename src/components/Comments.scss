@@ -1,0 +1,105 @@
+@import '../Styles.scss';
+.cmt{
+    background-color: $primary;
+    padding: 20px;
+    .cmt-header{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+        color: $text-primary;
+    }
+    .cmt-input>form{
+        padding-top: 20px;
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        input[type=text]{
+            width: 30%;
+            height: 30px;
+            outline: none;
+            padding: 4px;
+            border: none;
+            background: none;
+            font-size: 16px;
+            border-bottom: 2px solid $text-primary;
+            color: $text-primary;
+        }
+        input[type=text]::placeholder{
+            color: $text-primary;
+        }
+        button{
+            background-color: $text-primary;
+            outline: none;
+            border: 0;
+            width: 100px;
+            cursor: pointer;
+            color: $primary;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 16px;
+            transition: all 0.23s ease-in-out;
+        }
+        button:hover{
+            background-color: $card;
+            color: $text-primary;
+        }
+    }
+    .cmt-box{
+        display: grid;
+        width: 100%;
+        margin: 30px 0;
+        .cmt-content{
+            margin: 10px 20px;
+            padding: 10px 60px;
+            min-height: 50px;
+            border-radius: 4px;
+            background-color: $text-primary;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .cmt-txt{
+                display: grid;
+                color: $primary;
+                span:nth-child(1){
+                    font-weight: bold;
+                }
+            }
+            .cmt-del{
+                .del-btn{
+                    color: $primary;
+                    font-size: 30px;
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:800px) {
+    .cmt{
+        display: grid;
+        .cmt-input>form{
+            display: grid;
+            gap: 20px;
+            input[type=text]{
+                width: 100%;
+            }
+        }
+        .cmt-box{
+            display: grid;
+            width: 100%;
+            margin: 30px 0;
+            .cmt-content{
+            margin: 10px 2px;
+            padding: 10px 10px;
+        }
+    }
+    } 
+}

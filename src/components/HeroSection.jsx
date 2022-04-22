@@ -4,6 +4,8 @@ import './HeroSection.scss'
 import {BsFillArrowLeftCircleFill} from 'react-icons/bs'
 import {BsFillArrowRightCircleFill} from 'react-icons/bs'
 import Studios from './Studios';
+import Comments from './Comments';
+import Footer from './Footer';
 
 
 const HeroSection = () => {
@@ -62,6 +64,8 @@ const HeroSection = () => {
     </div>
     <Count />
     <Studios/>
+    <Comments/>
+    <Footer/>
     </>
   )
 }

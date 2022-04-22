@@ -1,0 +1,10 @@
+.footer{
+    display: grid;
+    place-items: center;
+    .footer-icons{
+        margin-top: 20px;
+        display: flex;
+        gap: 20px;
+        font-size: 20px;
+    }
+}

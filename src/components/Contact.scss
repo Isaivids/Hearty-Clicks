@@ -1,0 +1,48 @@
+@import '../Styles.scss';
+.contact{
+    p{
+        margin: 30px 0 10px 0 ;
+        font-weight: bold;
+    }
+    .contact-card{
+        display: grid;
+        place-items: center;
+        text-align: center;
+        width: 100%;
+        margin-top: 50px;
+    }
+    .contact-icons{
+        margin: 30px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        font-size: 25px;
+        a:nth-child(1){
+            color: rgb(176, 0, 56);
+        }
+        a:nth-child(2){
+            color: rgb(69, 69, 69);
+        }
+        a:nth-child(5){
+            color: rgb(47, 201, 0);
+        }
+        a:nth-child(4){
+            color: rgb(0, 200, 255);
+        }
+    }
+    .contact-footer{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .contact{
+        .contact-card{
+        }
+    }
+}

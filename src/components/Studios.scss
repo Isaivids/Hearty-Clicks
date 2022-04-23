@@ -10,7 +10,7 @@
     .studios-list{
         display: grid;
         width: 100%;
-        grid-template-columns: repeat(auto-fit, minmax(18%, 200px));
+        grid-template-columns: repeat(auto-fit, minmax(20%, 200px));
         justify-content: center;
         gap: 40px;
     }

@@ -9,7 +9,7 @@ function Footer() {
             <FaGithub/><FaInstagram/>
             <FaWhatsapp/><FaTwitter/>
         </div>
-      <p class="copyright">Magic Moments © 2022</p>
+      <p className="copyright">Magic Moments © 2022</p>
     </div>
   )
 }

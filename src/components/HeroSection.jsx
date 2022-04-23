@@ -1,12 +1,12 @@
-import React, {useEffect, useState} from 'react';
-import Count from './Count';
+import React, {useEffect, useState, Suspense} from 'react';
 import './HeroSection.scss'
 import {BsFillArrowLeftCircleFill} from 'react-icons/bs'
 import {BsFillArrowRightCircleFill} from 'react-icons/bs'
-import Studios from './Studios';
-import Comments from './Comments';
-import Footer from './Footer';
-
+import Count from './Count';
+import Spinner from './Spinner';
+const Studios = React.lazy(() => import('./Studios'));
+const Comments = React.lazy(() => import('./Comments'));
+const Footer = React.lazy(() => import('./Footer'));
 
 const HeroSection = () => {
 
@@ -63,9 +63,11 @@ const HeroSection = () => {
       <span id='goRight' onClick={goRight}><BsFillArrowRightCircleFill/></span>
     </div>
     <Count />
-    <Studios/>
-    <Comments/>
-    <Footer/>
+    <Suspense fallback={<Spinner/>}>
+			<Studios/>		
+			<Comments/>		
+			<Footer/>		
+    </Suspense>
     </>
   )
 }

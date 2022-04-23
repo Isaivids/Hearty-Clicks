@@ -8,6 +8,7 @@ function Comments() {
 
   const [reviews, setReviews] = useState(comments);
   const [addFormData, setAddFormData] = useState({
+    id:nanoid(),
     fullName: "",
     review: "",
   });
@@ -24,7 +25,6 @@ function Comments() {
   const handleAddFormSubmit = (event) => {
     event.preventDefault();
     const newReview = {
-      id: nanoid(),
       fullName: addFormData.fullName,
       review: addFormData.review,
     };
@@ -32,11 +32,9 @@ function Comments() {
     setReviews(newReviews);
   };
 
-  const handleDeleteClick = (contactId) => {
-    const newReviews = [...reviews];
-    const index = reviews.findIndex((comment) => comment.id === contactId);
-    newReviews.splice(index, 1);
-    setReviews(newReviews);
+  const handleDeleteClick = (cmt) => {
+    const newList = reviews.filter((item) => item.id !== cmt);
+    setReviews(newList);
   };
 
   return (
@@ -62,15 +60,15 @@ function Comments() {
         </form>
       </div>
       <div className='cmt-box'>
-        {reviews.map((comment,id)=>{
+        {reviews.map((comment)=>{
           return(
-            <div key={id} className="cmt-content">
+            <div key={comment.id} className="cmt-content">
               <div className='cmt-txt'>
                 <span>{comment.fullName}</span>
                 <span>{comment.review}</span>
               </div>
               <div className='cmt-del'>
-                <MdRemoveCircle onClick={handleDeleteClick} className="del-btn"/>
+                <MdRemoveCircle onClick={()=>handleDeleteClick(comment.id)} className="del-btn"/>
               </div>
             </div>
           )

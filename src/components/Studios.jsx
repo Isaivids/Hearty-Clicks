@@ -23,7 +23,7 @@ const Studios = () => {
                       <span>{studio.name}</span>
                       <span>{studio.type}</span>
                       <span>{studio.moto}</span>
-                      <span>{studio.amount} perDay</span>
+                      <span>&#8377; {studio.amount} perDay</span>
                     </div>
                     <div className='studio-footer'>
                       <span><FaWhatsapp/></span>

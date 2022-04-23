@@ -7,7 +7,7 @@ const Contact = () => {
     <div className='contact'>
       <div className='contact-card'>
         <p>Dilan Raj</p>
-        <span>Aspiring Web Developer</span><br/>
+        <span>Web Developer</span><br/>
         <span>dilanraj1999@gmail.com</span>
         <div className='contact-icons'>
           <a rel="noreferrer" href='https://www.instagram.com/?hl=en' target="_blank"><FaInstagram/></a>
